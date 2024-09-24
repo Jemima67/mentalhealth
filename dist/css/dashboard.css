@@ -1,0 +1,358 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("../../assets/fonts/Montserrat-Italic-VariableFont_wght.ttf")
+      format("ttf-variations");
+    src: url("../../assets/fonts/Montserrat-VariableFont_wght.ttf")
+      format("truetype");
+    font-weight: 100 1000;
+    font-stretch: 25% 151%;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+  }
+  
+  :root {
+    --primaryColor: #1E74FF;
+    --whiteColor: #FFFFFF;
+    --backgroundColor: #F6F9FE;
+    --redColor: #FF0000;
+    --textColor: #404040;
+    --iconColor: #68686A;
+    --textGrayColor: #BCBCBC;
+    --pupleColor: #4040F2;
+    --dividerColor: #C9C9C9;
+  }
+  
+  body {
+    background-color: var(--backgroundColor);
+    padding: 10px;
+  }
+
+
+/* Counter card section */
+.counter-cards {
+    display: flex;
+    margin: 1rem 0;
+    
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.counter-card {
+    background-color: var(--whiteColor);
+    border-radius: 20px;
+    border: 1px solid var(--primaryColor);
+    padding: 10px;
+    flex-grow: 1;
+}
+
+
+.counter-card .top-card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.counter-card .top-card .card-top-text .title {
+    font-size: 10px;
+    font-weight: 800;
+}
+
+.counter-card .top-card .card-top-text .count {
+    font-size: 27.5px;
+    font-weight: 800;
+}
+
+.top-card svg {
+    color: #9BA5B7;
+}
+
+.bottom-card {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.bottom-card p {
+    font-size: 7.5px;
+    color: var(--gray);
+}
+/* End of counter card section */
+
+/* Charts section */
+.charts {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+
+}
+
+.bar-chart {
+    width: 68%;
+    background-color: var(--whiteColor);
+    border-radius: 19px;
+    padding: 10px;
+    border: 0.5px solid var( --primaryColor);
+}
+
+.doughnut-chart {
+    width: 30%;
+    background-color: var(--whiteColor);
+
+    border-radius: 19px;
+    padding: 10px;
+    border: 0.5px solid var( --primaryColor);
+
+}
+
+.doughnut-chart .title {
+    font-size: 12px;
+    font-weight: 800;
+    padding: 1rem 0;
+    border-bottom: 1px solid #E2E2E2;
+    margin-bottom: 10px;
+}
+/* End of chart section */
+
+/* Revenue distribution section */
+.revenue-distribution {
+    width: 100%;
+    background-color: var(--whiteColor);
+    border-radius: 19px;
+    margin: 1rem 0;
+    padding: 15px 0;
+    border: 2px solid var(--white);
+}
+
+.revenue-table-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+@media (max-width: 880px) {
+    .revenue-table-head {
+        display: block;
+    }
+}
+
+
+.revenue-table-head .head-title {
+    font-size: 10px;
+    font-weight: 800;
+}
+
+.revenue-search-bar {
+    display: flex;
+    align-items: center;
+    background-color: var(--white);
+    width: 50%;
+    border-radius: 5px;
+    padding: 0 4px;
+}
+
+.revenue-search-bar input {
+    flex: 1;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    padding: 0 2px;
+}
+
+.revenue-search-bar input:focus {
+    outline: none;
+}
+
+.revenue-btns {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    background-color: var(--white);
+    padding: 8px 10px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn p {
+    font-size: 6px;
+    margin: 0 2px;
+}
+
+.view-btn {
+    background-color: var(--darkGray);
+    color: var(--yellow);
+}
+
+.export-btn {
+    border: 1px solid #D0D5DD;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+    margin-top: 15px;
+    color: var(--textBlackColor);
+    font-size: 11px;
+}
+
+.revenue-distribution table thead tr th {
+    font-size: 9px;
+    color: #667085;
+    background-color: white;
+    padding: 10px;
+    border-bottom:  1px solid #161616;
+}
+
+.revenue-distribution table thead tr th div {
+    display: flex;
+    align-items: center;
+}
+
+.revenue-distribution table thead tr th div p {
+    margin-right: 4px;
+}
+
+.revenue-distribution table tbody tr td {
+    padding: 10px;
+    border-bottom:  1px solid #161616;
+}
+
+.revenue-distribution table tbody tr td input[type='checkbox'] {
+    accent-color: var(--yellow);
+}
+
+.revenue-distribution table tbody tr td img {
+    width: 38.5;
+    height: 47px;
+}
+
+.revenue-distribution table tbody tr td span {
+    font-weight: 900;
+}
+
+.revenue-distribution table tbody tr td div {
+    display: flex;
+    align-items: center;
+}
+
+.revenue-distribution table tbody tr td div p {
+    margin-right: 4px;
+}
+
+.custom-checkbox {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    border: 1px solid var(--yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-checkbox div {
+    width: 5px;
+    height: 1px;
+    background-color: var(--yellow);
+}
+/* End of Revenue distribution section */
+
+/* Recent transaction section */
+.recent-transactions {
+    width: 100%;
+    background-color: var(--whiteColor);
+
+    border-radius: 19px;
+    margin: 1rem 0;
+    padding: 15px 0;
+    border: 2px solid var(--white);
+}
+
+.transactions-table-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.transactions-table-head .head-title {
+    font-size: 10px;
+    font-weight: 800;
+}
+
+.refresh-btn {
+    border: 1.5px solid var(--darkGray);
+    font-weight: 800;
+    padding: 5px 10px !important;
+}
+
+.recent-transactions table thead tr th {
+    font-size: 9px;
+    color: #667085;
+    background-color: var(--whiteColor);
+
+    padding: 10px;
+    border-bottom:  1px solid #161616;
+}
+
+.recent-transactions table thead tr th div {
+    display: flex;
+    align-items: center;
+}
+
+.recent-transactions table thead tr th div p {
+    margin-right: 4px;
+}
+
+.recent-transactions table tbody tr td {
+    padding: 10px;
+    border-bottom:  1px solid #161616;
+}
+
+.recent-transactions table tbody tr .status {
+    width: fit-content;
+    padding: 6px 8px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+.recent-transactions table tbody tr .status .indicator {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin-right: 4px;
+}
+
+.recent-transactions table tbody tr .successful {
+    background-color: #ECFDF3;
+    color: #037847;
+}
+
+.recent-transactions table tbody tr .successful .indicator {
+    background-color: #14BA6D;
+}
+
+.recent-transactions table tbody tr .failed {
+    background-color: #FDECEC;
+    color: #780303;
+}
+
+.recent-transactions table tbody tr .failed .indicator {
+    background-color: #BA1414;
+}

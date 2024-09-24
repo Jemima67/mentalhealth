@@ -1,0 +1,95 @@
+.whole{
+    background-color: #ffffff;
+    border: 0.7px solid #000000;
+    width: 965px;
+    height: 500px;
+    margin-left: 0px;
+    border-radius: 8px;
+    margin-top: 030px;
+    margin-left: 140px;
+}
+
+.transparent{
+    background-color: #e1ebfc;
+    /* border: 0.7px solid #000000; */
+    width: 985px;
+    height: 100px;
+    border-radius: 8px 8px 0px 0px;
+}
+.transparent img{
+    width: 360px;
+    height: 160px;
+    margin-left: 550px;
+    margin-top: -22px;
+    opacity: 20%;
+}
+.pp{
+    /* border: 0.7px solid #000000; */
+    width: 300px;
+    margin-left: 45px;
+    display: flex;
+    margin-top: -56px;
+    gap: 12px;
+}
+.pp img{
+    max-width: 100%;
+    height: 100px;
+}
+.text h5{
+    color: #1E74FF;
+    font-size: x-small;
+    margin-top: 20px;
+}
+.text h6{
+    color: black;
+    font-size: x-small;
+}
+.fom{
+    /* border: 0.7px solid #000000; */
+    margin-top: 30px;
+}
+.fom h4{
+    color: #1E74FF;
+    font-size: small;
+    font-weight: 200;
+    margin-left: 45px;
+}
+.liberate{
+    display: flex;
+    gap: 90px;
+    margin-left: 45px;
+    width: 450px;
+    height: 200px;
+}
+.liberate input{
+    border: 0.7px solid #000000;
+    border-radius: 5px;
+    width: 350px;
+    justify-content: space-around;
+    height: 35px; 
+   
+}
+
+.liberate p{
+    margin-bottom: 20px;
+
+}
+.back{
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+}
+.front{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.sub input{
+
+    background-color: #1E74FF;
+    width: 250px;
+    height: 33px  ;
+    margin-left: 340px;
+    border: 0;
+    border-radius: 5px;
+}
